@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap4.min.css
+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.2/css/select.bootstrap4.min.css
+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css">
+
+
+</head>
+<body>
+    <div>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">GGK Tech</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Employees <span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+    </nav>
+        </div>
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <hr />
+        
+    </div>
+
+   
+    @RenderSection("scripts", required: true)
+</body>
+</html>
